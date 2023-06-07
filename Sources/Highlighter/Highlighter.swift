@@ -11,13 +11,10 @@ import Foundation
 import JavaScriptCore
 
 #if os(OSX)
-import AppKit
+    import AppKit
+#else
+    import UIKit
 #endif
-
-#if os(IOS)
-import UIKit
-#endif
-
 
 /**
     Wrapper class for generating a highlighted NSAttributedString from a code string.
