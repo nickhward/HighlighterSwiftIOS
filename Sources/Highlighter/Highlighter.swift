@@ -14,6 +14,10 @@ import JavaScriptCore
 import AppKit
 #endif
 
+#if os(IOS)
+import UIKit
+#endif
+
 
 /**
     Wrapper class for generating a highlighted NSAttributedString from a code string.
